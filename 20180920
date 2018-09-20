@@ -10,3 +10,10 @@ int main(void)
    system("pause");
    return 0;
 }
+
+
+
+  File "cc.py", line 5
+    for j in range(1,5):
+      ^
+IndentationError: expected an indented block
