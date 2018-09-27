@@ -11,9 +11,7 @@ int main(void)
    return ;
    printf("Hello World!\n");
 }
-```
 
-```
 #include <stdio.h>
 #include <stdlib.h>
 int main(void)
@@ -25,8 +23,7 @@ int main(void)
    return ;
    printf("Hello World!\n");
 }
-```
-```
+
 /* myc_1_1, 我的第一個C程式碼 */ 
 #include <stdio.h>
 #include <stdlib.h>
