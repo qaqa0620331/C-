@@ -37,3 +37,11 @@ int main(void)
    printf("Hello World!\n");
 }
 ```
+
+
+Question 1:#include <stdio.h>
+include=入標題檔案到程式內
+stdio=標準輸入輸出函數
+std=stdlib
+i=輸入??o=out??
+h = header =標頭檔有何用途? 由編譯器在處理另一個原始檔的時候自動包含進來
