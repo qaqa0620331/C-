@@ -1,0 +1,10 @@
+root@kali:~# gedit 1.c
+root@kali:~# gcc -o 1 1.c
+root@kali:~# ./1
+恩師好!我是學生張洪鈞
+我的C300-1
+Input a character:c
+ch=c, The ASCII code is 99
+sh: 1: pause: not found
+root@kali:~# 
+
