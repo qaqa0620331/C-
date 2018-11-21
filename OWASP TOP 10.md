@@ -37,7 +37,6 @@
 
 >* A1 – Injection（注入攻擊） 
 >** 防護建議：
-
 使用Prepared Statements，例如Java PreparedStatement()，.NET SqlCommand(), OleDbCommand()，PHP PDO bindParam()
 使用Stored Procedures
 嚴密的檢查所有輸入值
@@ -46,7 +45,14 @@
 控管資料庫及網站使用者帳號權限為何
 
 >* A2 – Cross Site Scripting (XSS)（跨站腳本攻擊） 
-
+>** 防護建議：
+檢查頁面輸入數值
+輸出頁面做Encoding檢查
+使用白名單機制過濾，而不單只是黑名單
+PHP使用htmlentities過濾字串
+.NET使用Microsoft Anti-XSS Library
+OWASP Cross Site Scripting Prevention Cheat Sheet
+各種XSS攻擊的Pattern參考 
 
 >* A3 – Broken Authentication and Session Management（身分驗證功能缺失） 
 
