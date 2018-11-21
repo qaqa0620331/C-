@@ -1,4 +1,4 @@
-## OWASP TOP 10
+## OWASP TOP 10 2007
 
 
 >* 1. Cross Site Scripting（XSS）：當應用程式未將使用者提供的資料先審核或進行內容編碼，就直接將資料傳輸到網路瀏覽器，即可能發生XSS問題。XSS能讓攻擊者直接在受害者的網路瀏覽器上執行Script，攻擊者便可以hijack user sessions、或竄改網站內容等。
