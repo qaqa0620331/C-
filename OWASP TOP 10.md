@@ -29,3 +29,38 @@
 
 
 >* 10. Failure to Restrict URL Access：應用程式敏感地區是被保護的Links或是URLs，而這些是不會提供給未被授權的使用者。這也容易讓攻擊者利用這項弱點進入，並進行未被授權的行為。
+
+
+
+## OWASP TOP 10 2010
+
+
+>* A1 – Injection（注入攻擊） 
+
+
+>* A2 – Cross Site Scripting (XSS)（跨站腳本攻擊） 
+
+
+>* A3 – Broken Authentication and Session Management（身分驗證功能缺失） 
+
+
+>* A4 – Insecure Direct Object References（不安全的物件參考）
+
+
+>* A5 – Cross Site Request Forgery (CSRF)（跨站冒名請求） 
+
+
+>* A6 – Security Misconfiguration（安全性設定疏失） 
+
+
+>* A7 – Failure to Restrict URL Access（限制URL存取失敗）
+
+
+>* A8 – Unvalidated Redirects and Forwards（未驗證的導向）
+
+
+>* A9 – Insecure Cryptographic Storage（未加密的儲存設備）
+
+
+>* A10 – Insufficient Transport Layer Protection（傳輸層保護不足）
+
