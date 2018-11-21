@@ -45,7 +45,7 @@
 控管資料庫及網站使用者帳號權限為何
 
 >* A2 – Cross Site Scripting (XSS)（跨站腳本攻擊） 
->** 防護建議：
+防護建議：
 檢查頁面輸入數值
 輸出頁面做Encoding檢查
 使用白名單機制過濾，而不單只是黑名單
@@ -55,25 +55,54 @@ OWASP Cross Site Scripting Prevention Cheat Sheet
 各種XSS攻擊的Pattern參考 
 
 >* A3 – Broken Authentication and Session Management（身分驗證功能缺失） 
-
+防護建議：
+使用完善的COOKIE / SESSION保護機制
+不允許外部SESSION
+登入及修改資訊頁面使用SSL加密
+設定完善的Timeout機制
+驗證密碼強度及密碼更換機制 
 
 >* A4 – Insecure Direct Object References（不安全的物件參考）
-
+防護建議：
+避免將私密物件直接暴露給使用者
+驗證所有物件是否為正確物件
+使用Index / Hash等方法，而非直接讀取檔案
 
 >* A5 – Cross Site Request Forgery (CSRF)（跨站冒名請求） 
-
+防護建議：
+確保網站內沒有任何可供XSS攻擊的弱點
+在Input欄位加上亂數產生的驗證編碼
+在能使用高權限的頁面，重新驗證使用者
+禁止使用GET參數傳遞防止快速散佈
+使用Captcha等技術驗證是否為人為操作 
 
 >* A6 – Security Misconfiguration（安全性設定疏失） 
-
+防護建議：
+軟體、作業系統是否都有更新到最新版本？是否都有上最新Patch?
+不需要的帳號、頁面、服務、連接埠是否都有關閉？
+預設密碼是否都有更改？
+安全設定是否都完備？
+伺服器是否都有經過防火牆等設備保護？
 
 >* A7 – Failure to Restrict URL Access（限制URL存取失敗）
-
+HTTP Service直接限制來源IP
+使用防火牆阻擋
+密碼授權加密頁面
+網站架構最佳化
 
 >* A8 – Unvalidated Redirects and Forwards（未驗證的導向）
-
+非必要時避免使用Redirect及Forward
+驗證導向位置及存取資源是合法的
 
 >* A9 – Insecure Cryptographic Storage（未加密的儲存設備）
-
+使用現有公認安全的加密演算法
+減少使用已有弱點的演算法，例如MD5 / SHA-1，甚至更簡單的加密法
+安全的保存私鑰
 
 >* A10 – Insufficient Transport Layer Protection（傳輸層保護不足）
-
+防護建議：
+盡可能的使用加密連線
+Cookie使用Secure Flag
+確認加密憑證是有效並符合domain的
+後端連線也使用加密通道傳輸
+http://www.owasp.org/index.php/Transport_Layer_Protection_Cheat_Sheet 
