@@ -36,7 +36,7 @@
 
 
 >* A1 – Injection（注入攻擊） 
->** 防護建議：
+防護建議：
 使用Prepared Statements，例如Java PreparedStatement()，.NET SqlCommand(), OleDbCommand()，PHP PDO bindParam()
 使用Stored Procedures
 嚴密的檢查所有輸入值
