@@ -9,9 +9,9 @@ int main()
 
      sum = (401 * (2 * 1 + (401 - 1)* 4 ))/ 2;
      tn = 1 + (401 - 1) * 4;
-       for (i = 1; i <= tn; i = i + 4 )
+       for (i = 1; i <= 401;i = i + 4 )
      {
-          if (i != tn)
+          if (i != 401)
                printf("%d + ", i);
           else
                printf("%d = %d ", i, sum);
