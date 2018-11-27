@@ -1,0 +1,7 @@
+$_SERVER[]:讀取伺服器內的資料 echo $_SERVER['HTTP_HOST']; 則顯示http://127.0.0.1
+$_SERVER['PHP_AUTH_USER'] : 是否已輸入使用者
+$_SERVER['PHP_AUTH_PW'] : 是否已輸入密碼
+isset()函式的功能?:isset函數用於檢測變數是否已設置並且非NULL
+WWW-Authenticate是甚麼? 身分認證
+Basic vs Digest ? HTTP Basic在傳送憑證(credential)時僅是用Base64編碼(Base64 encoding)來傳送，而HTTP Digest是用MD5加密。
+因為Base64編碼可以輕鬆地被反轉，因此HTTP Basic必須搭配HTTPS來傳遞才不會有安全上的疑慮。
